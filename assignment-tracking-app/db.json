@@ -1,18 +1,36 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "name": "Pramod",
-            "email": "pramod@test.com",
-            "phone": "1234567899",
-            "address": "IN"
-        },
-        {
-            "id": 2,
-            "name": "Ram",
-            "email": "pramod@test.com",
-            "phone": "1234567899",
-            "address": "IN"
-        }
-    ]
+  "users": [
+    {
+      "id": 1,
+      "name": "admin",
+      "email": "admin@test.com",
+      "password": "admin123",
+      "phone": "1234567899",
+      "role": "admin"
+    },
+    {
+      "id": 1,
+      "name": "Pramod",
+      "email": "pramod@test.com",
+      "password": "user123",
+      "phone": "1234567899",
+      "role": "user"
+    },
+    {
+      "id": 2,
+      "name": "Ram",
+      "email": "test@test.com",
+      "password": "user234",
+      "phone": "1234567899",
+      "role": "user"
+    }
+  ],
+  "assignments": [
+    {
+      "id": 1,
+      "assignmentName": "Task 1",
+      "assignmentStatus": "In Progress",
+      "assignmentText": "Lorem ipsum lorem ipsum"
+    }
+  ]
 }
