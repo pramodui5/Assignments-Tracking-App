@@ -1,15 +1,15 @@
 import React from 'react';
 import { Nav } from 'react-bootstrap';
 
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 const NavLinks = () => {
   let navigate = useNavigate();
 
   return (
     <Nav className="me-auto">
-      <Nav.Link navigate="/SignUp"> Sign Up </Nav.Link>
-      <Nav.Link navigate="/Login"> Sign In </Nav.Link>
+      <Link to="/addUser"> Sign Up </Link>
+      <Link to="/Login"> Sign In </Link>
     </Nav>
   );
 };

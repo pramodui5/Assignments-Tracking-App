@@ -3,10 +3,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './component/users/Login';
 import SignUp from './component/users/SignUp';
 
-const Home = lazy(() => import('./pages/Home'));
-const About = lazy(() => import('./pages/About'));
-const UserProfile = lazy(() => import('./pages/UserProfile'));
-const AddEditTask = lazy(() => import('./pages/AddEditTask'));
+const Home = lazy(() => import('./component/Home'));
+const UserProfile = lazy(() => import('./component/users/UserProfile'));
+const AddEditUser = lazy(() => import('./component/users/AddEditUser'));
+const AddEditTask = lazy(() => import('./component/assignments/AddEditTask'));
 
 const Routing = () => {
   return (
@@ -15,10 +15,12 @@ const Routing = () => {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/signup" element={<SignUp />} />
+          <Route exact path="/addUser" element={<AddEditUser />} />
+          <Route exact path="/addEditUser/:id" element={<AddEditUser />} />
+
           <Route path="/addTask" element={<AddEditTask />} />
           <Route path="/editTask/:id" element={<AddEditTask />} />
           <Route path="/userProfile" element={<UserProfile />} />
-          <Route path="/about" element={<About />} />
           <Route path="/login" element={<Login />} />
         </Routes>
       </Suspense>

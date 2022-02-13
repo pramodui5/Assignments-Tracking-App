@@ -3,7 +3,7 @@ import createSagaMiddleware from 'redux-saga';
 import logger from 'redux-logger';
 
 import rootReducer from './rootReducer';
-import rootSaga from '../modules/usersSagas';
+import rootSaga from '../modules/user/usersSagas';
 
 const sagaMiddleware = createSagaMiddleware();
 const middlewares = [sagaMiddleware];

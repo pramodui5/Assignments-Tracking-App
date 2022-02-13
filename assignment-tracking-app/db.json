@@ -9,7 +9,7 @@
       "role": "admin"
     },
     {
-      "id": 1,
+      "id": 2,
       "name": "Pramod",
       "email": "pramod@test.com",
       "password": "user123",
@@ -17,12 +17,26 @@
       "role": "user"
     },
     {
-      "id": 2,
+      "id": 3,
       "name": "Ram",
       "email": "test@test.com",
       "password": "user234",
       "phone": "1234567899",
       "role": "user"
+    },
+    {
+      "id": 4,
+      "name": "Rashmirekha ",
+      "email": "test@test.com",
+      "phone": "08390656771",
+      "password": "aaaaaa"
+    },
+    {
+      "id": 5,
+      "name": "Rashmirekha Bhoi",
+      "email": "rashmirekhabhoi21@gmail.com",
+      "phone": "08390656771",
+      "password": "dsfcsdxf"
     }
   ],
   "assignments": [
