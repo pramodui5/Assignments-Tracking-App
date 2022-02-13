@@ -2,6 +2,7 @@ import React, { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './component/users/Login';
 import SignUp from './component/users/SignUp';
+import UserInfo from './component/users/UserInfo';
 
 const Home = lazy(() => import('./component/Home'));
 const UserProfile = lazy(() => import('./component/users/UserProfile'));
@@ -17,6 +18,7 @@ const Routing = () => {
           <Route exact path="/signup" element={<SignUp />} />
           <Route exact path="/addUser" element={<AddEditUser />} />
           <Route exact path="/addEditUser/:id" element={<AddEditUser />} />
+          <Route exact path="/userInfo/:id" element={<UserInfo />} />
 
           <Route path="/addTask" element={<AddEditTask />} />
           <Route path="/editTask/:id" element={<AddEditTask />} />
