@@ -4,7 +4,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { toast } from 'react-toastify';
 
-import { createUserStart, updateUserStart } from '../../modules/user/actions';
+import { createUserStart, updateUserStart } from '../../modules/users/actions';
 import PageTitle from '../../packages/PageTitle';
 import Layout from '../Layout';
 
@@ -17,13 +17,13 @@ const initialState = {
 };
 
 const AddEditUser = () => {
-  const [formValue, setFormValue] = useState(initialState);
-  const [editMode, setEditMode] = useState(false);
-  const { users } = useSelector((state) => state.data);
-  const { name, email, phone, password } = formValue;
-  const navigate = useNavigate();
   const dispatch = useDispatch();
   const { id } = useParams();
+  const [formValue, setFormValue] = useState(initialState);
+  const [editMode, setEditMode] = useState(false);
+  const { users } = useSelector((state) => state.usersReducer);
+  const { name, email, phone, password } = formValue;
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (id) {
@@ -47,7 +47,7 @@ const AddEditUser = () => {
         dispatch(updateUserStart({ id, formValue }));
         setEditMode(false);
         toast.success('User updated successfully');
-        setTimeout(() => navigate('/'), 500);
+        setTimeout(() => navigate('/userDetails'), 500);
       }
     }
   };

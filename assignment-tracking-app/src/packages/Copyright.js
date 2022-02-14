@@ -14,7 +14,7 @@ function Copyright() {
   return (
     <CopyrightContainer className="d-lg-flex justify-content-lg-end">
       <Paragraph>© 2020 Assignment Tracker. </Paragraph>
-      <Paragraph> &nbsp; Last Updated 10 Feb 2022.</Paragraph>
+      <Paragraph> &nbsp; Last Updated 15 Feb 2022.</Paragraph>
     </CopyrightContainer>
   );
 }

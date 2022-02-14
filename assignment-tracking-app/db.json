@@ -18,33 +18,63 @@
     },
     {
       "id": 3,
-      "name": "Ram",
-      "email": "test@test.com",
+      "name": "Akhilesh",
+      "email": "aki@test.com",
       "password": "user234",
       "phone": "1234567899",
       "role": "user"
     },
     {
       "id": 4,
-      "name": "Rashmirekha ",
+      "name": "Sunil ",
       "email": "test@test.com",
       "phone": "08390656771",
-      "password": "aaaaaa"
+      "password": "test123"
     },
     {
       "id": 5,
-      "name": "Rashmirekha Bhoi",
-      "email": "rashmirekhabhoi21@gmail.com",
+      "name": "Ram Das",
+      "email": "test@test.com",
       "phone": "08390656771",
-      "password": "dsfcsdxf"
+      "password": "sfsdf"
     }
   ],
   "assignments": [
     {
       "id": 1,
-      "assignmentName": "Task 1",
-      "assignmentStatus": "In Progress",
-      "assignmentText": "Lorem ipsum lorem ipsum"
+      "title": "Learn JSON",
+      "description": "This is to learn JSON",
+      "status": "In progress"
+    },
+    {
+      "id": 2,
+      "title": "Learn Redux",
+      "description": "This is to learn Redux",
+      "status": "Completed"
+    },
+    {
+      "id": 3,
+      "title": "Learn Redux Saga",
+      "description": "This is to learn Redux Saga",
+      "status": "In progress"
+    },
+    {
+      "id": 4,
+      "title": "Learn APIs",
+      "description": "This is to learn API Integration",
+      "status": "Completed"
+    },
+    {
+      "id": 5,
+      "title": "Learn React Router",
+      "description": "React Router DOM is a great tool for routing.",
+      "status": "In progress"
+    },
+    {
+      "id": 7,
+      "title": "Azure",
+      "status": "Completed",
+      "description": "This is to learn Azure"
     }
   ]
 }

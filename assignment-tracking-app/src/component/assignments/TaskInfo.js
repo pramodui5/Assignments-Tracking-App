@@ -5,34 +5,30 @@ import { MDBBtn } from 'mdb-react-ui-kit';
 import PageTitle from '../../packages/PageTitle';
 import Layout from '../Layout';
 
-const UserInfo = () => {
-  const { users } = useSelector((state) => state.usersReducer);
+const TaskInfo = () => {
+  const { assignments } = useSelector((state) => state.assignmentsReducer);
   const { id } = useParams();
   const navigate = useNavigate();
-  const singleUser = users.find((item) => item.id === Number(id));
-  console.log({ singleUser });
+  const singleAssignment = assignments.find((item) => item.id === Number(id));
+  console.log({ singleAssignment });
   return (
     <Layout>
       <div style={{ margin: 'auto', padding: '15px', alignContent: 'center' }}>
         <PageTitle>User Detail</PageTitle>
         <p className="col-md-6 fw-bold">
-          ID: <span className="fw-normal">{singleUser.id}</span>
+          ID: <span className="fw-normal">{singleAssignment.id}</span>
         </p>
 
         <p className="col-md-6 fw-bold">
-          Name: <span className="fw-normal">{singleUser.name}</span>
+          Title: <span className="fw-normal">{singleAssignment.title}</span>
         </p>
 
         <p className="col-md-6 fw-bold">
-          Email: <span className="fw-normal">{singleUser.email}</span>
+          Status: <span className="fw-normal">{singleAssignment.status}</span>
         </p>
 
         <p className="col-md-6 fw-bold">
-          Contact Number: <span className="fw-normal">{singleUser.phone}</span>
-        </p>
-
-        <p className="col-md-6 fw-bold">
-          Password: <span className="fw-normal">{singleUser.password}</span>
+          Description: <span className="fw-normal">{singleAssignment.description}</span>
         </p>
       </div>
       <MDBBtn onClick={() => navigate('/')} color="danger">
@@ -42,4 +38,4 @@ const UserInfo = () => {
   );
 };
 
-export default UserInfo;
+export default TaskInfo;

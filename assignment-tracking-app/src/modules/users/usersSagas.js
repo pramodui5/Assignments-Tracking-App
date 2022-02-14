@@ -74,11 +74,16 @@ function* onCreateUser() {
 }
 
 function* onUpdateUser() {
-  yield takeLatest(types.CREATE_USER_START, onUpdateUserStartAsync);
+  yield takeLatest(types.UPDATE_USER_START, onUpdateUserStartAsync);
 }
 
-const usersSagas = [fork(onLoadUsers), fork(onCreateUser), fork(onDeleteUser), fork(onUpdateUser)];
+const combineUsersSagas = [
+  fork(onLoadUsers),
+  fork(onCreateUser),
+  fork(onDeleteUser),
+  fork(onUpdateUser),
+];
 
-export default function* rootSaga() {
-  yield all([...usersSagas]);
+export default function* usersSagas() {
+  yield all([...combineUsersSagas]);
 }

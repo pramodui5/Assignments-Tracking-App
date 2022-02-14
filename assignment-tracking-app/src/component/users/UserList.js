@@ -12,14 +12,13 @@ import {
   MDBSpinner,
 } from 'mdb-react-ui-kit';
 
-import { deleteUserStart, loadUsersStart } from '../../modules/user/actions';
-import Card from '../../packages/Card';
+import { deleteUserStart, loadUsersStart } from '../../modules/users/actions';
 import PageTitle from '../../packages/PageTitle';
 import { toast } from 'react-toastify';
 
 const UserList = () => {
   const dispatch = useDispatch();
-  const { users, loading, error } = useSelector((state) => state.data);
+  const { users, loading, error } = useSelector((state) => state.usersReducer);
 
   useEffect(() => {
     dispatch(loadUsersStart());
