@@ -35,7 +35,7 @@ const UserInfo = () => {
           Password: <span className="fw-normal">{singleUser.password}</span>
         </p>
       </div>
-      <MDBBtn onClick={() => navigate('/')} color="danger">
+      <MDBBtn onClick={() => navigate('/userDetails')} color="danger">
         Go Back
       </MDBBtn>
     </Layout>

@@ -31,7 +31,7 @@ const TaskInfo = () => {
           Description: <span className="fw-normal">{singleAssignment.description}</span>
         </p>
       </div>
-      <MDBBtn onClick={() => navigate('/')} color="danger">
+      <MDBBtn onClick={() => navigate('/taskDetails')} color="danger">
         Go Back
       </MDBBtn>
     </Layout>

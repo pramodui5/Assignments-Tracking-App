@@ -46,7 +46,7 @@ const AddEditTask = () => {
       if (!editMode) {
         dispatch(createAssignmentsStart(formValue));
         toast.success('User added successfully');
-        setTimeout(() => navigate('/'), 500);
+        setTimeout(() => navigate('/taskDetails'), 500);
       } else {
         dispatch(updateAssignmentStart({ id, formValue }));
         setEditMode(false);
