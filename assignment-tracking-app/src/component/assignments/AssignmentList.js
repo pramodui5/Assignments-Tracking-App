@@ -14,6 +14,7 @@ import { toast } from 'react-toastify';
 
 import { deleteAssignmentStart, loadAssignmentsStart } from '../../modules/assignments/actions';
 import PageTitle from '../../packages/PageTitle';
+import Layout from '../Layout';
 
 const AssignmentList = () => {
   const dispatch = useDispatch();
@@ -44,7 +45,7 @@ const AssignmentList = () => {
   };
 
   return (
-    <>
+    <Layout>
       <PageTitle>Assignments Detail</PageTitle>
       <MDBTable className="mt-5">
         <MDBTableHead dark>
@@ -56,10 +57,10 @@ const AssignmentList = () => {
             <th>Action</th>
           </tr>
         </MDBTableHead>
-        {assignments &&
-          assignments.map((item, index) => (
-            <MDBTableBody key={index}>
-              <tr>
+        <MDBTableBody style={{ backgroundColor: '#fbfbfb' }}>
+          {assignments &&
+            assignments.map((item, index) => (
+              <tr key={index}>
                 <td>{index + 1}</td>
                 <td>{item.title}</td>
                 <td>{item.status}</td>
@@ -97,10 +98,10 @@ const AssignmentList = () => {
                   </Link>
                 </td>
               </tr>
-            </MDBTableBody>
-          ))}
+            ))}
+        </MDBTableBody>
       </MDBTable>
-    </>
+    </Layout>
   );
 };
 

@@ -1,13 +1,13 @@
 import React from 'react';
 import { ToastContainer } from 'react-bootstrap';
-import Routing from './Routing';
+import Routing from './Routing/Routing';
 import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
 
 function App() {
   return (
     <>
-      <ToastContainer />
+      <ToastContainer className="toast" />
       <Routing />
     </>
   );

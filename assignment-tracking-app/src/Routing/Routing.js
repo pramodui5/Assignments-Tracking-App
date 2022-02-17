@@ -1,16 +1,16 @@
 import React, { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import Login from './component/users/Login';
+import Login from '../component/users/Login';
 
-const Home = lazy(() => import('./component/Home'));
-const AddEditTask = lazy(() => import('./component/assignments/AddEditTask'));
-const AssignmentList = lazy(() => import('./component/assignments/AssignmentList'));
-const TaskInfo = lazy(() => import('./component/assignments/TaskInfo'));
+const Home = lazy(() => import('../component/Home'));
+const AddEditTask = lazy(() => import('../component/assignments/AddEditTask'));
+const AssignmentList = lazy(() => import('../component/assignments/AssignmentList'));
+const TaskInfo = lazy(() => import('../component/assignments/TaskInfo'));
 
-const AddEditUser = lazy(() => import('./component/users/AddEditUser'));
-const UserInfo = lazy(() => import('./component/users/UserInfo'));
-const UserList = lazy(() => import('./component/users/UserList'));
+const AddEditUser = lazy(() => import('../component/users/AddEditUser'));
+const UserInfo = lazy(() => import('../component/users/UserInfo'));
+const UserList = lazy(() => import('../component/users/UserList'));
 
 const Routing = () => {
   return (

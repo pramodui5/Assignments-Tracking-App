@@ -14,7 +14,7 @@ const TaskInfo = () => {
   return (
     <Layout>
       <div style={{ margin: 'auto', padding: '15px', alignContent: 'center' }}>
-        <PageTitle>User Detail</PageTitle>
+        <PageTitle>Assignment Detail</PageTitle>
         <p className="col-md-6 fw-bold">
           ID: <span className="fw-normal">{singleAssignment.id}</span>
         </p>

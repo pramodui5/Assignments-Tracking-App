@@ -42,39 +42,33 @@
   "assignments": [
     {
       "id": 1,
-      "title": "Learn JSON",
-      "description": "This is to learn JSON",
-      "status": "In progress"
-    },
-    {
-      "id": 2,
       "title": "Learn Redux",
       "description": "This is to learn Redux",
       "status": "Completed"
     },
     {
-      "id": 3,
+      "id": 2,
       "title": "Learn Redux Saga",
       "description": "This is to learn Redux Saga",
       "status": "In progress"
     },
     {
-      "id": 4,
+      "id": 3,
       "title": "Learn APIs",
       "description": "This is to learn API Integration",
       "status": "Completed"
     },
     {
-      "id": 5,
+      "id": 4,
       "title": "Learn React Router",
       "description": "React Router DOM is a great tool for routing.",
       "status": "In progress"
     },
     {
-      "id": 7,
+      "id": 5,
       "title": "Azure",
       "status": "Completed",
-      "description": "This is to learn Azure"
+      "description": "This is to learn Azure 1234"
     }
   ]
 }

@@ -62,10 +62,16 @@ const Login = () => {
               className="mb-3"
             />
 
-            <div className="col-12">
+            <div className="col-12" style={{ display: 'flex', justifyContent: 'center' }}>
               <MDBBtn style={{ marginRight: '10px' }} type="submit">
                 Login
               </MDBBtn>
+              <MDBBtn style={{ marginRight: '10px' }} type="submit">
+                Reset
+              </MDBBtn>
+            </div>
+            <div style={{ textAlign: 'center', margin: '20px', textDecoration: 'underline' }}>
+              <a role="button">Forgot password? Reset here</a>
             </div>
           </div>
         </MDBValidation>

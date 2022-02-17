@@ -13,14 +13,18 @@ const Layout = (props) => {
   return (
     <Container fluid className="pl-0 pr-0">
       <Header />
-      <Row style={{ height: '100vh' }}>
+      <Row>
         {/* {isLogin && (
           <Col sm={3}>
             <Sidebar />
           </Col>
         )} */}
-
-        <Col sm={12}>{props.children}</Col>
+        <Col sm={2}>
+          <Sidebar />
+        </Col>
+        <Col sm={8} style={{ overflow: 'auto', paddingBottom: '100px' }}>
+          {props.children}
+        </Col>
       </Row>
       <Footer />
     </Container>

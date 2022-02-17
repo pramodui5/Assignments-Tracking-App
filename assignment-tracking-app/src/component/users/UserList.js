@@ -15,6 +15,7 @@ import {
 import { deleteUserStart, loadUsersStart } from '../../modules/users/actions';
 import PageTitle from '../../packages/PageTitle';
 import { toast } from 'react-toastify';
+import Layout from '../Layout';
 
 const UserList = () => {
   const dispatch = useDispatch();
@@ -44,7 +45,7 @@ const UserList = () => {
   };
 
   return (
-    <>
+    <Layout>
       <PageTitle>Users Detail</PageTitle>
       <MDBTable className="mt-5">
         <MDBTableHead dark>
@@ -57,10 +58,10 @@ const UserList = () => {
             <th>Action</th>
           </tr>
         </MDBTableHead>
-        {users &&
-          users.map((item, index) => (
-            <MDBTableBody key={index}>
-              <tr>
+        <MDBTableBody style={{ backgroundColor: '#fbfbfb' }}>
+          {users &&
+            users.map((item, index) => (
+              <tr key={index}>
                 <td>{index + 1}</td>
                 <td>{item.name}</td>
                 <td>{item.email}</td>
@@ -99,10 +100,10 @@ const UserList = () => {
                   </Link>
                 </td>
               </tr>
-            </MDBTableBody>
-          ))}
+            ))}
+        </MDBTableBody>
       </MDBTable>
-    </>
+    </Layout>
   );
 };
 

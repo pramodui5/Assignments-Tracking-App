@@ -4,13 +4,15 @@ import Layout from './Layout';
 import AssignmentList from './assignments/AssignmentList';
 import UserList from './users/UserList';
 import Login from './users/Login';
+import Dashboard from './Dashboard';
 
 const Home = () => {
   return (
-    <Layout>
+    <>
       {/* <UserList /> */}
       <AssignmentList />
-    </Layout>
+      {/* <Dashboard /> */}
+    </>
   );
 };
 

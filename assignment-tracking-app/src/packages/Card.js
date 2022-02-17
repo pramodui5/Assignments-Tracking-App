@@ -8,7 +8,7 @@ const CardContainer = styled.div`
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
   border-radius: 10px;
   padding: 30px;
-  margin: 10% auto;
+  margin: 7.5% auto;
 `;
 
 const Card = (props) => {
